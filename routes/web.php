@@ -8,9 +8,7 @@ use App\Models\Container;
 use App\Models\LevelCase;
 use App\Models\LevelPart;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/login');
 
 Route::get('/dashboard', function () {
     $summary = [
